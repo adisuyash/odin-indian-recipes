@@ -1,0 +1,81 @@
+/* All Elements */
+* {
+  color: white;
+  background-color: #111827;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Odin indian recipes image */
+.odin-indian-recipe {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+
+/* About section of website */
+div.about {
+  margin-top: 35px;
+}
+
+h2,
+p.dishes {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+/* Recipes box & recipes inside (div) */
+div.recipe-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+}
+
+div.recipes {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 5px;
+}
+
+/* Recipe images & their names with links*/
+.recipe-image {
+  width: 400px;
+  height: 256px;
+  border-radius: 40px;
+}
+
+a.recipe-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Footer Styling*/
+hr {
+  width: 1200px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  position: relative;
+  top: 3px;
+  left: 6px;
+}
+
+footer a:hover {
+  color: rgb(255, 170, 0);
+}
