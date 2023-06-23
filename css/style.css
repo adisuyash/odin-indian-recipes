@@ -82,10 +82,10 @@ footer a:hover {
 }
 
 /* DOSA HTML */
-.dosa-h2{
+.dish-h2{
   margin-top: 25px;
 }
-.dosa-para{
+.dish-para{
   padding-left: 12%;
   padding-right: 12%;
 }
@@ -93,11 +93,11 @@ footer a:hover {
   margin-bottom: 35px;
 }
 
-li.dosa{
+li.dish{
   padding-bottom: 6px;
 }
 
-.dosa-image-html {
+.dish-image-html {
   margin: auto;
   width: 400px;
   height: 256px;
