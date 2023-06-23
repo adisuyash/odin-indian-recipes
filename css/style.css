@@ -3,6 +3,7 @@
   color: white;
   background-color: #111827;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  word-spacing: 3px;
 }
 
 /* Odin indian recipes image */
@@ -78,4 +79,47 @@ footer a {
 
 footer a:hover {
   color: rgb(255, 170, 0);
+}
+
+/* DOSA HTML */
+.dosa-h2{
+  margin-top: 25px;
+}
+.dosa-para{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.ingredients{
+  margin-bottom: 35px;
+}
+
+li.dosa{
+  padding-bottom: 6px;
+}
+
+.dosa-image-html {
+  margin: auto;
+  width: 400px;
+  height: 256px;
+  border-radius: 40px;
+}
+
+p.additional, p.ingredients, p.directions, p.tips{
+  font-size: large;
+}
+
+p.tips{
+  padding-top: 15px;
+}
+
+p.taste{
+  font-size: large;
+  padding-top: 15px;
+}
+
+span.taste{
+  font-size:medium;
+}
+a.source{
+  color: rgb(255, 0, 89);
 }
