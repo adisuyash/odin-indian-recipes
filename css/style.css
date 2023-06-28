@@ -2,79 +2,100 @@
 * {
   color: white;
   background-color: #111827;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   word-spacing: 3px;
 }
 
-/* Odin indian recipes image */
 .odin-indian-recipe {
-  width: 530px;
+  display: block;
+  max-width: 100%;
+  max-height: 64px;
+  height: auto;
   margin: auto;
-  display: flex;
-  position: relative;
-  top: 5px;
+  padding-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .odin-indian-recipe {
+    max-width: 530px;
+  }
 }
 
 /* About section of website */
 div.about {
   margin-top: 35px;
-}
-
-h2,
-p.dishes {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-p.center {
-  padding-bottom: 3px;
+div.about > ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-/* Recipes box & recipes inside (div) */
-div.recipe-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 320px;
+div.about > h2,
+p.dishes {
+  text-align: center;
 }
 
-div.recipes {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 400px;
+div.about > h2 {
+  margin-top: 0px;
+}
+
+/* Recipes box & recipes inside (div) */
+
+div.recipe-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+a.recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 5px;
+  text-decoration: none;
 }
 
 /* Recipe images & their names with links*/
-.recipe-image {
-  width: 400px;
-  height: 256px;
-  border-radius: 40px;
+
+img.recipe-image {
+  object-fit: cover;
+  object-position: 100% 30%;
+  height: 50vw;
+  width: 86vw;
+  border-radius: 20px;
 }
 
-a.recipe-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+@media (min-width: 480px) {
+  img.recipe-image {
+    height: 256px;
+    width: 400px;
+    border-radius: 40px;
+  }
 }
 
 /* Footer Styling*/
 hr {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 footer a {
   text-decoration: none;
-  position: relative;
-  top: 3px;
-  left: 6px;
 }
 
 footer a:hover {
@@ -82,44 +103,66 @@ footer a:hover {
 }
 
 /* DOSA HTML */
-.dish-h2{
+.dish-h2 {
   margin-top: 25px;
+  text-align: center;
 }
-.dish-para{
-  padding-left: 12%;
-  padding-right: 12%;
+
+.dish-para {
+  padding-left: 1%;
+  padding-right: 1%;
 }
-.ingredients{
+@media (min-width: 768px) {
+  .dish-para {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+.ingredients {
   margin-bottom: 35px;
 }
 
-li.dish{
+li.dish {
   padding-bottom: 6px;
 }
 
 .dish-image-html {
-  margin: auto;
-  width: 400px;
-  height: 256px;
-  border-radius: 40px;
+  object-fit: cover;
+  object-position: 100% 30%;
+  height: 50vw;
+  width: 86vw;
+  border-radius: 20px;
+  margin: 0 auto;
 }
 
-p.additional, p.ingredients, p.directions, p.tips{
+@media (min-width: 480px) {
+  .dish-image-html {
+    height: 256px;
+    width: 400px;
+    border-radius: 40px;
+  }
+}
+
+p.additional,
+p.ingredients,
+p.directions,
+p.tips {
   font-size: large;
 }
 
-p.tips{
+p.tips {
   padding-top: 15px;
 }
 
-p.taste{
+p.taste {
   font-size: large;
   padding-top: 15px;
 }
 
-span.taste{
-  font-size:medium;
+span.taste {
+  font-size: medium;
 }
-a.source{
+a.source {
   color: rgb(255, 0, 89);
 }
